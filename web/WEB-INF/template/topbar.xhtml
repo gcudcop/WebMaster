@@ -1,0 +1,86 @@
+<ui:composition 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:pu="http://primefaces.org/ultima"
+    xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+
+    <div class="topbar clearfix">
+        <div class="topbar-left">  
+            <p:graphicImage name="/imagenes/emergencia.png" width="60%" library="resources"/>            
+        </div>
+
+        <div class="topbar-right">
+            <a id="menu-button" href="#">
+                <i></i>
+            </a>
+
+            <a id="topbar-menu-button" href="#">
+                <i class="material-icons">menu</i>
+            </a>
+
+            <!--
+            <ul class="topbar-items fadeInDown animated">
+                <ui:fragment>
+                    <li>
+                        <a href="#">
+                            <i class="topbar-icon material-icons animated swing">&#xE0C9;</i>
+                            <span class="topbar-badge animated rubberBand">Hola</span>
+                            <span class="topbar-item-name">Messages</span>
+                        </a>
+                        <ul class="ultima-menu animated">
+                            <li role="menuitem">
+                                <a href="/WebAppYelou/faces/rutasCompartidasReceptor.xhtml">
+                                    <i class="material-icons">&#xE32A;</i>
+                                    <span>Cambiar</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ui:fragment>
+            </ul>
+            -->
+
+
+            <ul class="topbar-items fadeInDown animated">
+                <ui:fragment>
+                    <li class="profile-item">
+                        <a href="#">  
+                            <i class="material-icons">&#xE887;</i>
+                            <!--<p:graphicImage name="/imagenes/emergencia.png" width="90%" library="resources"  class="profile-image" />    -->
+                            <!--<span class="topbar-item-name">#{sessionScope.Datos}</span>-->
+                            <span class="topbar-item-name">Opciones</span>
+                        </a>
+
+                        <ul class="ultima-menu animated">
+
+                            <c:choose>
+                                <c:when  test="#{sessionScope.totalRoles != 1}">
+                                    <li role="menuitem">
+                                        <a href="/WebMaster/privado/rol.jsf">
+                                            <i class="material-icons">&#xE32A;</i>
+                                            <span>Cambiar Rol</span>
+                                        </a>
+                                    </li>
+                                </c:when>
+                            </c:choose>                                                          
+
+                            <li role="menuitem">
+                                <h:form>
+                                    <p:commandLink action="#{ctLogin.cerrarSesion()}">
+                                        <i class="material-icons">&#xE8AC;</i>
+                                        <span>Salir</span>
+                                    </p:commandLink>
+                                </h:form>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ui:fragment>                                 
+            </ul>            
+        </div>
+    </div>
+
+</ui:composition>

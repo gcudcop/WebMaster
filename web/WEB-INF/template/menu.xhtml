@@ -1,0 +1,44 @@
+<ui:composition 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:pu="http://primefaces.org/ultima"
+    xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+
+    <h:form id="menuform"> 
+        <div class="layout-menu">
+            <div class="nano">
+                <div class="nano-content menu-scroll-content">
+                    <ui:fragment rendered="#{guestPreferences.profileMode == 'inline' and guestPreferences.menuLayout != 'menu-layout-static menu-layout-horizontal'}">
+                        <div class="profile" >
+                         
+                            <p:graphicImage name="/imagenes/login.png" width="90%" library="resources"  class="profile-image" />    
+
+                            <br/>                           
+                            <a id="profile-options" href="#">
+                                <span class="topbar-item-name" style="color: #212121">#{sessionScope.Datos}</span>
+                                <i class="material-icons">&#xE313;</i>
+                            </a>
+
+                        </div>
+
+                        <ul id="profile-menu" class="ultima-menu">
+                            <li role="menuitem">
+                                <a href="/WebAppYelou/faces/datosCooperativa.xhtml">
+                                    <i class="material-icons">&#xE8B9;</i>
+                                    <span>Cambiar Datos</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </ui:fragment>
+
+                    <pu:menu widgetVar="me" model="#{ctMenuTemplate.menu}"></pu:menu>
+
+                </div>
+            </div>
+        </div>
+    </h:form>
+</ui:composition>

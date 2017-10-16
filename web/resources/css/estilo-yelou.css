@@ -1,0 +1,348 @@
+@font-face
+{
+    font-family: "Fabada-regular";
+    src: url("/fonts/Fabada-regular.ttf");
+    src: url("/fonts/Fabada-regular.ttf#Fabada-regular") format("embedded-opentype"),
+    url("/fonts/Fabada-regular.ttf") format("truetype")
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin:0;
+}
+video {
+   position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    /*min-height: 100%;*/
+    width: 100%;
+    /*height: 100%;*/
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-500%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+.container h1 {
+    color: white;
+}
+
+body{
+    font-family: "Fabada-regular";
+}
+
+h3{
+    padding: 20px;
+}
+
+p{
+    font-family: "Fabada-regular";
+    margin-bottom: 20px;
+}
+
+header {
+    background: rgba(255,255,255,1);
+    width:  100%;
+    position: fixed;
+    z-index: 100;
+    -webkit-box-shadow: 0px 9px 10px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 9px 10px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 9px 10px -8px rgba(0,0,0,0.75);
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    font-family: "Fabada-regular";
+    list-style: none;
+    overflow: hidden
+}
+
+nav ul li{
+    float: right;
+    font-size: 16px;
+}
+
+nav ul li a{
+    display: block;
+    padding: 15px;
+    color: #212121;
+    text-decoration:none;
+}
+
+nav ul li a:hover{
+    background: #0277BD;
+    color: #000000;
+}
+
+.general {
+    width: 100%;
+    margin: auto
+}
+
+.fondo-amarillo {
+    padding: 5px;
+    background-color: #eed135;
+    color: #212121;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap:wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content:center;
+    justify-content: center;
+}
+
+.centrar-parrafo {
+    text-align: center;
+    margin: 0px;
+    padding-top: 7px;
+    font-size: 20pt;
+    font-family: "Fabada-regular";
+}
+
+.padding-imagen {
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.imagenes {
+    width: 100%;
+    display: block;
+    border: none;
+    margin: 0px;
+}
+
+.contenedor {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap:wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content:center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.imagen-item {
+    width: 220px;
+    margin: 20px;
+}
+
+.centrar-datos {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+    font-family: "Fabada-regular";
+}
+
+.fondo-azul {
+    padding: 5px;
+    background-color: #0ba3ea;
+    color: #fff;
+}
+
+.fondo-verde {
+    padding: 5px;
+    background-color: #577606;
+    color: #fff;
+}
+
+.centrar-palabras {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Fabada-regular";
+}
+
+.imagen-central {
+    width: 300px;
+    margin: 20px;
+}
+
+.imagen-centrada {
+    width:90%;
+    display: block;
+    border: none;
+    margin: auto;
+}
+
+.ecu911 {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-family: "Fabada-regular";
+    width: 780px;
+}
+
+.contenedor-gris {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap:wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content:center;
+    justify-content: center;
+    background-color: #eaeaea;
+    padding-top: 50px;
+}
+
+.contenedor-imagen {
+    margin-top: -5px;
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex:wrap;
+    flex-wrap: wrap;
+    -webkit-align-items:stretch;
+    align-items: stretch;
+    background-color: #fff;
+}
+
+.izquierda-arriba {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    width: 50%;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+}
+
+footer{
+    margin-top: 0px;
+    padding: 20px;
+    background-color: #4b4b4b;
+    color: #fff;
+}
+
+.sin-decoracion {
+    text-decoration: none;
+    color: #fff;
+    font-size: 8pt
+}
+
+.contenedor-footer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap:wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content:space-around;
+    justify-content: space-around;
+}
+
+.imagen-redes {
+    padding: 0px 15px 0px 15px;
+}
+
+.fondo-azul-d {
+    padding: 5px;
+    background-color: #3366ff;
+    color: #fff;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap:wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content:center;
+    justify-content: center;
+}
+
+.espacio {
+    height: 550px;
+}
+
+@media screen and (max-width: 960px) {
+    body
+    
+    .general {
+        width: 100%
+    }
+    .izquierda-arriba {
+    background-color: #fff;
+    margin-top: -5px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 90%;
+    margin: auto;
+    color: #212121;
+    text-align: center;
+    background: #ffffff;
+    }
+    video{
+        top: 30%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    .espacio{
+        height: 300px;
+    }
+    .posicion_centrada {
+    position: absolute;
+    top: 0px;
+    left: 41%;
+    width: 50%;
+    color: #fff;
+    text-align: center;
+    }
+    .contendedor-div-ecu{
+    width: 50%;    
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .espacio{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .espacio{
+        height: 200px;
+    }
+}
+#basico{
+background-image:url(/images/mascara.png);
+background-repeat:no-repeat;
+background-position:left;
+    width: 100%;
+}
+
+
+
+.posicion_centrada {
+    position: absolute;
+    top: 0px;
+    left: 41%;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+}
+
+.contendedor-div-ecu {
+    width: 780px
+}
+
+.texto {
+    color: #fff;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.fondo-vacio {
+    width: 50%
+}
+
+.div-centrado {
+    width: 70%;
+    padding: 50px;
+    margin: auto;
+}

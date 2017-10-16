@@ -1,0 +1,217 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02/11/2016, 10:45:20
+    Author     : STD
+*/
+
+/*Estilos Operdora*/
+/*VHome*/
+/*menu de lineas*/
+#menu{
+    width: 10%;
+    height: 40px;
+    /*/background-color: red;*/
+    padding: -200px;
+    /*/display: inline-block;*/
+    float: left;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+/*mapaoperadora*/
+/*Direccion y buscar*/
+.input-group{
+    margin-left: 10%;
+}
+#buscar{
+    margin-left:  10px;
+}
+
+/*modal de horario de viajes*/
+#popup {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+}
+
+.content-popup {
+    margin:0px auto;
+    margin-top:120px;
+    position:relative;
+    padding:10px;
+    width:500px;
+    min-height:250px;
+    border-radius:4px;
+    background-color:#FFFFFF;
+    box-shadow: 0 2px 5px #666666;
+}
+
+.content-popup h2 {
+    color:#48484B;
+    border-bottom: 1px solid #48484B;
+    margin-top: 0;
+    padding-bottom: 4px;
+}
+
+.popup-overlay {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    display:none;
+    background-color: #777777;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+}
+
+
+/*mapaIngreso*/
+/*mmenu periodo, parametro, ruta*/
+#tabs{
+    background-color:  #CFCFC4;
+    z-index: 1;
+    width: 98%;
+    height: 1px;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.btnperimetro{
+    background-color: #FFE920;
+    margin-left: 10px;
+    padding: 6px;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+.btnperimetro:hover{
+    background-color: yellow;
+
+}
+.separador{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    display: block;
+}
+.input-group {
+    margin-left: 0%;
+}
+
+    /*Estilo modal ruta- pop up de ruta*/
+#popupruta{
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+}
+
+.content-popupruta{
+    margin:0px auto;
+    margin-top:120px;
+    position:relative;
+    padding:10px;
+    width:500px;
+    min-height:250px;
+    border-radius:4px;
+    background-color:#FFFFFF;
+    box-shadow: 0 2px 5px #666666;
+}
+
+.content-popupruta h2 {
+    color:#48484B;
+    border-bottom: 1px solid #48484B;
+    margin-top: 0;
+    padding-bottom: 4px;
+}
+
+.popupruta-overlay {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    display:none;
+    background-color: #777777;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.closeruta {
+    position: absolute;
+    right: 15px;
+}
+
+#formruta{
+    font-family: "Verdana";
+    font-size: 14px;
+    text-align: center;
+    line-height: 28px;
+}
+
+ /*Estilo modal - pop up de parada*/
+#popupparada {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+}
+
+.content-popupparada {
+    margin:0px auto;
+    margin-top:120px;
+    position:relative;
+    padding:10px;
+    width:500px;
+    min-height:250px;
+    border-radius:4px;
+    background-color:#FFFFFF;
+    box-shadow: 0 2px 5px #666666;
+}
+
+.content-popupparada h2 {
+    color:#48484B;
+    border-bottom: 1px solid #48484B;
+    margin-top: 0;
+    padding-bottom: 4px;
+}
+
+.popupparada-overlay {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    display:none;
+    background-color: #777777;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+}
+
+#formparada{
+    font-family: "Verdana";
+    font-size: 14px;
+    text-align: center;
+
+}

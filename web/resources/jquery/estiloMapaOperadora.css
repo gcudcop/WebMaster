@@ -1,0 +1,241 @@
+@font-face
+{
+    font-family: "Fabada-regular";
+    src: url("../fonts/Fabada-regular.ttf");
+    src: url("../fonts/Fabada-regular.ttf#Fabada-regular") format("embedded-opentype"),
+        url("../fonts/Fabada-regular.ttf") format("truetype");
+}
+
+
+
+html, body { height: 100%; margin: 0; padding: 0; font-family: "Fabada-regular"; }
+            #map { height: 100%; }
+            .botonbuscar{
+                 margin: 3px;
+                border: 1px solid #afca41;
+                background: #afca41;
+                font-weight: normal;   
+                color: #ffffff;
+                border-radius: 0px;
+                padding: 5px;
+                cursor: pointer;
+            }
+            .botonsolicitar{
+                  margin: 8px;
+                border: 1px solid #3e83c1;
+                background: #3e83c1;
+                font-weight: normal;   
+                color: #ffffff;
+                border-radius: 0px;
+                padding: 5px;
+                cursor: pointer;
+            }
+            .botonenviar{
+                 margin: 3px;
+                border: 1px solid #f1990d;
+                background: #f1990d;
+                font-weight: normal;   
+                color: #ffffff;
+                border-radius: 0px;
+                padding: 5px;
+                cursor: pointer;
+            }
+            .botonaviso{
+                border: 1px solid #f1990e;
+                background: #f1990e;
+                margin: 3px;
+                font-weight: normal;   
+                color: #ffffff;
+                border-radius: 0px;
+                padding: 5px;
+                cursor: pointer;
+            }
+            .botonprogramar{
+              float: right;
+              margin-top: 0.3%;
+              margin-right: 0.5%;
+              margin-bottom: 0.5%;
+              background: #2e4a99;
+              color: #ffffff;
+              border: 1px solid #2e4a99;
+               cursor: pointer;
+               padding: 5px;
+            }
+            .botoncancelar{
+                margin: 3px;
+                border: 1px solid #e23323;
+                background: #e23323;
+                font-weight: normal;   
+                color: #ffffff;
+                border-radius: 0px;
+                padding: 5px;
+                cursor: pointer;
+            }
+            
+            .cajita{
+                /* background: #dfe1e4;*/
+                background: white;
+                width: 210px;
+                height: 110px;
+            }
+            .buttoP{
+                width: 50px;
+                margin-top: -10px;
+            }
+            
+            /*hedaers titulos*/
+            .headers{
+                background: #757575; color: white; padding: 11px;
+                font-size: 15px; font-family: "Fabada-regular";
+            }
+            
+            /*textos de ayuda*/
+            .form_hint {
+                background: #fac82c;
+                padding-left: 5px;
+                font-size: 11px;
+                border-radius: 3px 3px 3px 3px;
+                color: white;
+                width: 140px;
+                z-index: 999;
+                position: absolute;
+                display: none;
+            }
+            .form_hint::before {
+                content: "\25C0";
+                color: #fac82c;
+                position: absolute;
+                top:1px;
+                left:-8px;
+            }
+            .contact_form input:focus + .form_hint {display: inline;}
+            
+            /*estilo contact form cliente*/
+            *:focus { outline: none; } 
+            .contact_form h2, .contact_form label { font-family: "Fabada-regular"; }
+            .form_hint, .required_notification { font-size: 12px; }
+            .contact_form ul {
+                list-style-type: none; 
+                list-style-position: outside;
+                margin: 0px; padding: 0px; 
+            } 
+            .contact_form li { 
+                padding: 2px;
+                position: relative;
+            } 
+            /* === Form Header === */ 
+            .contact_form h4 
+            { 
+                margin: 0; display: inline;
+            } 
+            .required_notification {
+                color: #d45252;
+                margin: 5px 0 0 0;
+                display: inline;
+                float: right; 
+            } 
+            /* === Form Elements === */ 
+            .contact_form label 
+            { width: 80px;
+              display: inline-block;
+              padding: 3px; 
+            }  
+            .contact_form input { 
+                height: 15px; 
+                /*  width: 140px; */
+                padding: 5px 8px; 
+            }
+            
+            /* form element visual styles */ 
+            .contact_form input:focus, .contact_form textarea:focus { 
+                background: #fff;  border-color: #18bc9c; 
+            }
+            .contact_form input, .contact_form textarea {
+                border: 0px ; 
+                border-radius: 0px;
+                padding-right: 10px; 
+                -moz-transition: padding .25s;
+                -webkit-transition: padding .25s;
+                -o-transition: padding .25s;
+                transition: padding .25s;
+                background-color: #e5e4e2;
+            } 
+            .contact_form input:focus, .contact_form textarea:focus { 
+                background: #fff; border: 1px solid #7798b3;
+                box-shadow: 0 0 1px #85b9d6; }
+            .contact_form input:required, .contact_form textarea:required {
+                background: #fff url(../../resources/imagenes/Icon_asterisco.png) no-repeat 98% center;
+            }
+            .contact_form input:required:valid, .contact_form textarea:required:valid { 
+                background: #fff url(../../resources/imagenes/valid.png) no-repeat 98% center; 
+                box-shadow: 0 0 1px #5cd053; 
+            }
+            .contact_form input:focus:invalid, 
+            .contact_form textarea:focus:invalid {
+                background: #fff url(../../resources/imagenes/invalid.png) no-repeat 98% center; 
+                box-shadow: 0 0 1px #118e06; 
+            }
+            
+            .contenedor-formulario{
+                width: 100%;
+                height: 10%;
+            }
+
+        .contenedor-formulario .formulario input{
+            margin-left: 5px;
+             padding: 5px;
+             border-bottom: 2px solid #BBDEFB;
+             border-top: 1px solid white;
+             border-left: 1px solid white;
+             border-right: 1px solid white;
+             margin-bottom:  22px;
+            font-family:"Fabada-regular";
+        }
+        
+         .contenedor-formulario .formulario  input[type="text"]:focus, 
+         .contenedor-formulario .formulario  input[type="text"]:active {
+          outline: none;
+          border-bottom: 2px solid #BBDEFB;
+        }
+        
+        .input-group {
+          position: relative;
+          margin-bottom: 22px;
+        }
+       .input-group input[type="text"] {
+          font-family: "Fabada-regular";
+          font-size: 14px;
+          color: #303F9F;
+          width: 150px;
+          outline: none;
+          padding: 10px;
+          background: none;
+          border: none;
+          border-bottom: 2px solid #BBDEFB;
+        }
+        /*
+        .input-group input[type="text"]:focus, 
+         .input-group input[type="text"]:active {
+          outline: none;
+          border-bottom: 2px solid #303F9F;
+        }
+        */       
+        .input-group label {
+          color: #999;
+        }
+        .input-group label.label {
+          -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          margin-left: 15px;
+          font-size: 16px;
+          line-height: 16px;
+          position: absolute;
+          top: 9px;
+          left: 0;
+        }
+       .input-group label.label.active {
+          top: -1px;
+          font-size: 12px;
+          line-height: 12px;
+          color: #B6B6B6;
+        }
